@@ -3,13 +3,21 @@ var Btn2 = document.querySelector("#btn2");
 var Input = document.querySelector("#input");
 var outputDiv = document.querySelector("#output");
 var sum = 0;
-var userInput = Input.value;
 function clickH1() {
-  sum = userInput + 1;
+  var userInput = Input.value;
+  console.log(userInput);
+
+  sum = parseInt(userInput) + 1;
+  console.log(sum);
+
   outputDiv.innerHTML = sum;
 }
 function clickH2() {
-  sum = userInput - 1;
+  var userInput = Input.value;
+
+  sum = parseInt(userInput) - 1;
+  console.log(sum);
+
   outputDiv.innerHTML = sum;
 }
 
