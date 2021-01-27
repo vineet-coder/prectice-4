@@ -5,7 +5,7 @@ var outputDiv = document.querySelector("#output");
 var sum = 0;
 var userInput = Input.value;
 function clickH1() {
-  sum = parseInt(userInput) + 1;
+  sum = userInput + 1;
   outputDiv.innerHTML = sum;
 }
 function clickH2() {
